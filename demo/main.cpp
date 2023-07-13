@@ -24,6 +24,7 @@ int main(void) {
 
     int user_option = 0;
 
+    // taking user input
     std::cout << "Type in 1-6: ";
     std::cin >> user_option;
     std::cout << "Your choice: " << user_option << std::endl;
