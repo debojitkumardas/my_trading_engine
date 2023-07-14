@@ -25,9 +25,45 @@ int main(void) {
     int user_option = 0;
 
     // taking user input
-    std::cout << "Type in 1-6: ";
-    std::cin >> user_option;
-    std::cout << "Your choice: " << user_option << std::endl;
+
+    int choice = 1;
+
+    while (choice) {
+
+        std::cout << "Type in 1-6: ";
+        std::cin >> user_option;
+        std::cout << "Your choice: " << user_option << std::endl;
+
+        switch (user_option) {
+            case 1:
+                std::cout << "Help - your aim is to make money. Analyse the market and make bids and offers." << std::endl;
+                break;
+            case 2:
+                std::cout << "Market looks good." << std::endl;
+                break;
+            case 3:
+                std::cout << "Mark and offer - enter the amount." << std::endl;
+                break;
+            case 4:
+                std::cout << "Make a bid - enter the amount." << std::endl;
+                break;
+            case 5:
+                std::cout << "Your wallet is empty." << std::endl;
+                break;
+            case 6:
+                std::cout << "Going to next time frame." << std::endl;
+                break;
+            default:
+                std::cout << "Invalid choice. Choose from 1-6." << std::endl;
+                break;
+        }
+
+        std::cout << "Enter 0 to exit or 1 to continue: ";
+        std::cin >> choice;
+
+        if (choice == 0)
+            std::cout << "Exiting!!" << std::endl;
+    }
 
     return 0;
 }
