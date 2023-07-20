@@ -1,4 +1,4 @@
-CC=g++
+CXX=clang++
 CXXFLAGS=-Wall -Werror -Wextra -g -std=c++17
 
 SRC=$(wildcard *.cpp)

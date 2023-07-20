@@ -1,6 +1,8 @@
 #include <iostream>
-#include <memory_resource>
+#include <list>
 
+/** prints the menu has six of them
+ *  Its pretty cool */
 void print_menu() {
     // 1 print help
     std::cout << "1. Print help " << std::endl;
@@ -16,6 +18,7 @@ void print_menu() {
     std::cout << "6. Continue " << std::endl;
 
     std::cout << "=====================" << std::endl;
+
 }
 
 int get_user_option() {
@@ -28,28 +31,52 @@ int get_user_option() {
     return user_option;
 }
 
+void print_help() {
+    std::cout << "Help - your aim is to make money. Analyse the market and make bids and offers." << std::endl;
+}
+
+void print_market_stats() {
+    std::cout << "Market looks good." << std::endl;
+}
+
+void enter_offer() {
+    std::cout << "Mark and offer - enter the amount." << std::endl;
+}
+
+void enter_bid() {
+    std::cout << "Make a bid - enter the amount." << std::endl;
+}
+
+void print_wallet() {
+    std::cout << "your wallet is empty." << std::endl;
+}
+
+void goto_next_time_frame() {
+    std::cout << "Going to next time frame." << std::endl;
+}
+
 void process_user_option(int user_option) {
 
     if (user_option == 0) {
         std::cout << "Invalid choice. Choose from 1-6." << std::endl;
     }
     if (user_option == 1) {
-        std::cout << "Help - your aim is to make money. Analyse the market and make bids and offers." << std::endl;
+        print_help();
     }
     if (user_option == 2) {
-        std::cout << "Market looks good." << std::endl;
+        print_market_stats();
     }
     if (user_option == 3) {
-        std::cout << "Mark and offer - enter the amount." << std::endl;
+        enter_offer();
     }
     if (user_option == 4) {
-        std::cout << "Make a bid - enter the amount." << std::endl;
+        enter_bid();
     }
     if (user_option == 5) {
-        std::cout << "Your wallet is empty." << std::endl;
+        print_wallet();
     }
     if (user_option == 6) {
-        std::cout << "Going to next time frame." << std::endl;
+        goto_next_time_frame();
     }
 }
 
