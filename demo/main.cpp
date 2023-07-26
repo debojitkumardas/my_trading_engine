@@ -1,5 +1,4 @@
 #include <iostream>
-#include <list>
 
 /** prints the menu has six of them
  *  Its pretty cool */
@@ -18,11 +17,9 @@ void print_menu() {
     std::cout << "6. Continue " << std::endl;
 
     std::cout << "=====================" << std::endl;
-
 }
 
 int get_user_option() {
-
     int user_option = 0;
     std::cout << "Type in 1-6: ";
     std::cin >> user_option;
@@ -56,7 +53,6 @@ void goto_next_time_frame() {
 }
 
 void process_user_option(int user_option) {
-
     if (user_option == 0) {
         std::cout << "Invalid choice. Choose from 1-6." << std::endl;
     }
@@ -80,8 +76,7 @@ void process_user_option(int user_option) {
     }
 }
 
-int main(void) {
-
+int main() {
     int user_option = 0;
     int choice = 1;
 
@@ -89,7 +84,6 @@ int main(void) {
 
     // looping the menu
     while (choice != 0) {
-
         // taking user input
         user_option = get_user_option();
 
