@@ -1,11 +1,16 @@
-CXX=clang++
-CXXFLAGS=-Wall -Werror -Wextra -Wpedantic -g -std=c++17
+BIN_DIR=./bin/
+
+CXX=g++
+CXXFLAGS=-Wall -Werror -Wextra -Wpedantic -std=c++17
 
 SRC=$(wildcard *.cpp)
 OBJ=$(patsubst %.cpp, %.o, $(SRC))
 BIN=main
 
 all: $(BIN)
+
+debug: CXXFLAGS += -DDEBUG -g
+debug: $(BIN)
 
 $(BIN): $(OBJ)
 	$(CXX) $(CXXFLAGS) -o $@ $^
