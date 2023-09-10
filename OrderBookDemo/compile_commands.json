@@ -1,0 +1,52 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-Wall",
+      "-Werror",
+      "-Wextra",
+      "-Wshadow",
+      "-pedantic",
+      "-pthread",
+      "-std=c++17",
+      "-I",
+      ".",
+      "-I./OrderBookTests/lib/googletest/",
+      "-I./OrderBookTests/lib/googletest/include/",
+      "-DDEBUG",
+      "-g",
+      "-c",
+      "-o",
+      "bin/main.o",
+      "src/main.cpp"
+    ],
+    "directory": "/home/debojitkumardas/Programs/things_to_put_in_github/my_trading_engine/OrderBookDemo",
+    "file": "/home/debojitkumardas/Programs/things_to_put_in_github/my_trading_engine/OrderBookDemo/src/main.cpp",
+    "output": "/home/debojitkumardas/Programs/things_to_put_in_github/my_trading_engine/OrderBookDemo/bin/main.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-Wall",
+      "-Werror",
+      "-Wextra",
+      "-Wshadow",
+      "-pedantic",
+      "-pthread",
+      "-std=c++17",
+      "-I",
+      ".",
+      "-I./OrderBookTests/lib/googletest/",
+      "-I./OrderBookTests/lib/googletest/include/",
+      "-DDEBUG",
+      "-g",
+      "-c",
+      "-o",
+      "bin/OrderBook.o",
+      "src/OrderBook.cpp"
+    ],
+    "directory": "/home/debojitkumardas/Programs/things_to_put_in_github/my_trading_engine/OrderBookDemo",
+    "file": "/home/debojitkumardas/Programs/things_to_put_in_github/my_trading_engine/OrderBookDemo/src/OrderBook.cpp",
+    "output": "/home/debojitkumardas/Programs/things_to_put_in_github/my_trading_engine/OrderBookDemo/bin/OrderBook.o"
+  }
+]
